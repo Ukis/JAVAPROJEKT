@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head lang="en"></head>
+<body>
+<tr th:each="user : ${userModelList}">
+    <td th:text="${user.id}"></td>
+    <td th:text="${user.firstName}">Jan</td>
+    <td th:text="${user.lastName}">Miejscowy</td>
+    <td th:text="${user.email}">jan.miejscowy@wp.pl</td>
+    <td th:text="${user.username}">miejscowy</td>
+</tr>
+</body>
+</html>

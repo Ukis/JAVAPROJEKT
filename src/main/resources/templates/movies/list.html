@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head lang="en"></head>
+<body>
+<tr th:each="movie : ${moviesModelList}">
+    <td th:text="${movie.id}"></td>
+    <td th:text="${movie.countries}">Jan</td>
+    <td th:text="${movie.title}">Miejscowy</td>
+    <td th:text="${movie.votes}">jan.miejscowy@wp.pl</td>
+    <td th:text="${movie.year}">miejscowy</td>
+</tr>
+</body>
+</html>
